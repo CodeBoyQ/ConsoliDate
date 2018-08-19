@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7803ddb-c639-4cf6-a98a-0c65dfc53cf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoliDate.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeboyq/ConsoliDateApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeboyq/ExifReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/2018-07-21 16.24.36.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/2018-07-25 11.03.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Foto van 21 July a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Foto van 21 July b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Foto van 21 July c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Foto van 23 July a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Foto van 23 July b.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPictures/Video 20 July.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180720/Video 20 July.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180720/Video 20 July.mp4_20180720" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/2018-07-21 16.24.36.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/2018-07-21 16.24.36.mov_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July a.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July b.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180721/Foto van 21 July c.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180723/Foto van 23 July a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180723/Foto van 23 July a.jpeg_20180723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180723/Foto van 23 July b.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180723/Foto van 23 July b.jpeg_20180723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180725/2018-07-25 11.03.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestPicturesTemp/20180725/2018-07-25 11.03.17.png_20180725" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/2018-07-21 16.24.36.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/2018-07-25 11.03.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Foto van 21 July a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Foto van 21 July b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Foto van 21 July c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Foto van 23 July a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Foto van 23 July b.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPictures/Video 20 July.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/2018-07-21 16.24.36.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/2018-07-25 11.03.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180720/Video 20 July.mp4_20180720" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180721/2018-07-21 16.24.36.mov_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180721/Foto van 21 July a.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180721/Foto van 21 July b.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180721/Foto van 21 July c.jpg_20180721" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180723/Foto van 23 July a.jpeg_20180723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180723/Foto van 23 July b.jpeg_20180723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/20180725/2018-07-25 11.03.17.png_20180725" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Foto van 21 July a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Foto van 21 July b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Foto van 21 July c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Foto van 23 July a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Foto van 23 July b.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestPicturesTemp/Video 20 July.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codeboyq/ConsoliDateApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codeboyq/ExifReader.class" beforeDir="false" />
-    </list>
+    <list default="true" id="f7803ddb-c639-4cf6-a98a-0c65dfc53cf6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,11 +54,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeboyq/ConsoliDateApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeboyq/ExifReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/shortcuts.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -132,9 +104,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,7 +144,78 @@
             <path>
               <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeboyq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPicturesTemp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPicturesTemp" type="462c0819:PsiDirectoryNode" />
+              <item name="20180720" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPicturesTemp" type="462c0819:PsiDirectoryNode" />
+              <item name="20180721" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPicturesTemp" type="462c0819:PsiDirectoryNode" />
+              <item name="20180723" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConsoliDate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ConsoliDate" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +295,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32959184" />
@@ -268,6 +308,24 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codeboyq/ConsoliDateApp.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codeboyq/ConsoliDateApp.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -293,18 +351,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
+        <state relative-caret-position="960">
           <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeboyq/ExifReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
+        <state relative-caret-position="735">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/shortcuts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -315,13 +380,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/shortcuts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
         </state>
       </provider>
     </entry>
