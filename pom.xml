@@ -4,15 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.codeboyq</groupId>
+    <groupId>com.codeboyq.consolidate</groupId>
     <artifactId>ConsoliDate</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-
         <junit.version>4.8.2</junit.version>
         <commonsio.version>2.6</commonsio.version>
         <slf4j.version>1.7.25</slf4j.version>
@@ -20,6 +19,16 @@
         <imagej.version>1.52e</imagej.version>
         <metadataextractor.version>2.11.0</metadataextractor.version>
         <joestelmach.version>0.13</joestelmach.version>
+        <maven.jar.plugin.version>3.1.0</maven.jar.plugin.version>
+        <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
+        <maven.dependecy.plugin.version>3.1.1</maven.dependecy.plugin.version>
+        <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+        <maven.antrun.plugin.version>1.8</maven.antrun.plugin.version>
+        <output.dir>dist</output.dir>
+        <output.dir.service>${output.dir}/ConsoliDateService</output.dir.service>
+        <output.dir.service.binaries>${output.dir.service}/_ConsoliDateBinaries</output.dir.service.binaries>
+        <temp.output.dir>target</temp.output.dir>
+        <temp.output.dir.binaries>${temp.output.dir}/_ConsoliDateBinaries</temp.output.dir.binaries>
     </properties>
 
     <dependencies>
@@ -71,5 +80,153 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
 
+            <!-- Clean the output directories -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean.plugin.version}</version>
+                <configuration>
+                    <followSymLinks>false</followSymLinks>
+                    <filesets>
+                        <fileset>
+                            <directory>${output.dir}</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>${temp.output.dir}</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
+            <!-- Copy the dependencies to a lib subfolder in the temporary output directory -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>${maven.dependecy.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${temp.output.dir.binaries}/libs
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Create the executable jar in the temporary output directory -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>libs</classpathPrefix>
+                            <mainClass>com.codeboyq.consolidate.MainApp</mainClass>
+                        </manifest>
+                    </archive>
+                    <outputDirectory>${temp.output.dir.binaries}</outputDirectory>
+                    <finalName>consoliDateApp</finalName>
+                    <excludes>
+                        <exclude>**/*logback.xml</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <!-- Copy the resources to the temporary output directory -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${temp.output.dir.binaries}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <includes>
+                                        <include>logback.xml</include>
+                                        <include>run.sh</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <!-- Create the Automator Service folder and copy the temporary output directory -->
+                    <execution>
+                        <id>copy-resources-automator-service</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${output.dir.service}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources/macosx-automator/service</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-resources-automator-service-binaries</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${output.dir.service.binaries}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${temp.output.dir.binaries}</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Grant Execute rights to the Automator Application, Service and the Shell script -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>${maven.antrun.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>process-test-classes</id>
+                        <phase>verify</phase>
+                        <configuration>
+                            <target>
+                                <!--chmod dir="${output.dir.service}/ConsoliDate.app/Contents/MacOS/Application Stub" perm="755" /-->
+                                <chmod file="${output.dir.service.binaries}/run.sh" perm="755" />
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+        </plugins>
+    </build>
 </project>

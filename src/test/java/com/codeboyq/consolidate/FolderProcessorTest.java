@@ -1,4 +1,4 @@
-package com.codeboyq;
+package com.codeboyq.consolidate;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;

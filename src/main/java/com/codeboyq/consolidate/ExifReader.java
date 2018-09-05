@@ -1,4 +1,4 @@
-package com.codeboyq;
+package com.codeboyq.consolidate;
 
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;

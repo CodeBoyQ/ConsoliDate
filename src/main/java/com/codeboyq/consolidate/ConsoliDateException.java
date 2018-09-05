@@ -1,4 +1,4 @@
-package com.codeboyq;
+package com.codeboyq.consolidate;
 
 public class ConsoliDateException extends Exception {
 

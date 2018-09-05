@@ -1,0 +1,1 @@
+This folder contains third-party plugins and scripts used to create the ConsoliDate Service with MacOSX Automator

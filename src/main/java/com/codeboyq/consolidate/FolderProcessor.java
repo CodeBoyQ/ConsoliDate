@@ -1,4 +1,4 @@
-package com.codeboyq;
+package com.codeboyq.consolidate;
 
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
