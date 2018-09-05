@@ -1,5 +1,8 @@
 package com.codeboyq;
 
+import org.slf4j.ext.XLogger;
+import org.slf4j.ext.XLoggerFactory;
+
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,6 +19,8 @@ import static java.util.stream.Collectors.toList;
 public class FolderProcessor {
 
     private static int OFFSET_HOURS = 7; //Footage taken [OFFSET_HOURS] after midnight will still be part of the same day
+
+    private static final XLogger logger = XLoggerFactory.getXLogger(FolderProcessor.class);
 
     private FolderProcessor() {
 
@@ -39,11 +44,11 @@ public class FolderProcessor {
             } catch (Exception e) {
                 //This file can't be processed, go to the next file
                 skippedFiles.add(currentFile.getName());
-                System.out.println("Skipped file: " + currentFile.getName() + " because it could not be processed");
+                logger.info("Skipped file: " + currentFile.getName() + " because it could not be processed");
                 continue;
             }
 
-            System.out.println(currentFile.getName() + "  Exif date: " + ExifReader.getOriginalDateFromFile(currentFile));
+            logger.info(currentFile.getName() + "  Exif date: " + ExifReader.getOriginalDateFromFile(currentFile));
 
             File eventFolder = new File (currentFile.getParent() + File.separator + getDestinationFolderName(currentFileExifDate));
             if (!eventFolder.exists()) {
@@ -56,14 +61,14 @@ public class FolderProcessor {
 
             if(temp != null)
             {
-                System.out.println("File " + currentFile.getName() + " renamed and moved successfully");
+               logger.info("File " + currentFile.getName() + " renamed and moved successfully");
             } else {
-                System.out.println("Failed to move the file");
+                logger.info("Failed to move the file");
             }
 
         }
 
-        System.out.println("Skipped: " + skippedFiles.size() + " / " + skippedFiles.toString());
+        logger.info("Skipped: " + skippedFiles.size() + " / " + skippedFiles.toString());
     }
 
 

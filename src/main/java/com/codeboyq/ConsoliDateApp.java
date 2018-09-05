@@ -1,64 +1,29 @@
 package com.codeboyq;
 
-import org.apache.commons.io.FileUtils;
+import org.slf4j.ext.XLogger;
+import org.slf4j.ext.XLoggerFactory;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
-
-import static java.util.stream.Collectors.toList;
 
 public class ConsoliDateApp {
 
+    private static final XLogger logger = XLoggerFactory.getXLogger(ConsoliDateApp.class);
+
     public static void main(String[] args) throws Exception {
+        logger.entry(args[0]);
 
-        File srcDir = new File("/Users/astronauta/Documents/java_i_workspaces/ConsoliDate/src/main/resources/TestPictures");
-        File destDir = new File("/Users/astronauta/Documents/java_i_workspaces/ConsoliDate/src/main/resources/TestPicturesTemp");
-
-        try {
-            FileUtils.copyDirectory(srcDir, destDir);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (args.length != 1) {
+            throw new ConsoliDateException("Please give only one argument: folderPath");
         }
 
-        List<Path> filesInFolder = Files.list(Paths.get(destDir.getPath()))
-                .filter(Files::isRegularFile)
-                .collect(toList());
+        File folder = new File(args[0]);
 
-        for (Path filePath : filesInFolder) {
-            File currentFile = filePath.toFile();
-            System.out.println(currentFile.getName() + " - " + ExifReader.getOriginalDateFromFile(currentFile));
-
-            LocalDateTime fileDateTime = ExifReader.getOriginalDateFromFile(currentFile);
-
-            String eventFolderName = fileDateTime.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
-
-            File eventFolder = new File (currentFile.getParent() + File.separator + eventFolderName);
-            if (!eventFolder.exists()) {
-                eventFolder.mkdir();
-            }
-
-            Path temp = Files.move (Paths.get(currentFile.getPath()), Paths.get(eventFolder.getPath(), currentFile.getName()));
-
-            if(temp != null)
-            {
-                System.out.println("File " + currentFile.getName() + "renamed and moved successfully");
-            }
-            else
-            {
-                System.out.println("Failed to move the file");
-            }
-
+        if (!folder.exists()) {
+            throw new ConsoliDateException("Folder " + folder.getPath() + " does not exist");
         }
 
+        FolderProcessor.process(folder);
 
-
-
-
+        logger.exit();
     }
 }
